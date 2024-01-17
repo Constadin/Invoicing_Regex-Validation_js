@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation-App</title>
+
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+    <div id="application">
+        <!-- header  -->
+        <header class="name-company">
+            <div class="content-name-comany">
+                <h2 class="namecompany">Name Company</h2>
+                <ul>
+                    <li>Address: Aspliti 78</li>
+                    <li>Town: Powercon</li>
+                    <li>T.K: 145 89</li>
+                    <li>Country: Greece</li>
+                    <li>Phone Number: +30 215 5874563</li>
+                </ul>
+            </div>
+        </header>
+        <main class="main-view">
+        <!-- Registration form  -->
+            <section class="registration-form">
+                <h2>Registration Form</h2>
+                <p>Regex Validation</p>
+                <span class="red-asterisk">*</span>
+                <h5>only feet allowed
+                    english letters</h5>
+                    <h6>the first letter capital</h6>
+                <form id="reg-form">
+                    <div class="forms-style">
+                        <label for="fname"style="padding-right: 48px;">First Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="example (e.g. Joe)" title="Please enter your first name" autocomplete="on" required><br><br>                        
+                    </div>
+                    <div class="forms-style">
+                        <label for="lastName" style="padding-right: 50px;">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName"placeholder="example (e.g. Papadakos)"title="Please enter your last name" autocomplete="on" required><br><br>
+                    </div>
+                    <div class="forms-style">
+                        <label for="storeName" style="padding-right: 42px;">Store Name:</label>
+                        <input type="text" id="storeName" name="storeName"placeholder="example (e.g. Bien all day)"title="Please enter your store name" autocomplete="on" required><br><br>
+                    </div>            
+                    <div class="forms-style">
+                        <label for="storeAddress" style="padding-right: 22px;">Store Address:</label>
+                        <input type="text" id="storeAddress" name="storeAddress"placeholder="example (e.g. Akakion 98)" title="Please enter your store address" autocomplete="on" required><br><br>
+                    </div>
+                    <div class="forms-style" >
+                        <span class="red-asterisk">*</span>
+                        <h5>typed
+                    capital letters</h5>
+                        <label for="location"style="padding-right: 123px;">Location:</label>
+                        <input type="text" id="location" name="location" placeholder="example (e.g. PETRALONA)" title="Please enter your city" autocomplete="on" required><br><br>
+                    </div>
+                    <div class="forms-style" >                        
+                        <label for="city"style="padding-right: 123px;">City:</label>
+                        <input type="text" id="city" name="city"placeholder="example (e.g. ATHENS)" title="Please enter your city" autocomplete="on" required><br><br>
+                    </div>
+                    <div class="forms-style">
+                        <label for="country" style="padding-right: 123px;">Country:</label>
+                        <input type="text" id="country" name="country"placeholder="example (e.g. GREECE)" title="Please enter your country" autocomplete="on" required><br><br>
+                    </div>
+                    <div class="forms-style">
+                        <label for="postalCode"style="padding-right: 123px;">Postal Code:</label>
+                        <input type="text" id="postalCode" name="postalCode"placeholder="(e.g. 14485AB or CDA2547)" title="Please enter your postal code" autocomplete="on" required><br><br>
+                    </div>    
+                    <div class="forms-style">
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber"placeholder="example (e.g. +30 2584 8565456..)"  title="Please enter your phone number" autocomplete="on" required><br><br>
+                    </div>
+                    <div class="forms-style">
+                        <label for="mobileNumber">Mobile Number:</label>
+                        <input type="text" id="mobileNumber" name="mobileNumber"placeholder="example (e.g. +30 5555 555555..)"  title="Please enter your mobile number" autocomplete="on" required><br><br>
+                    </div>
+                    <div class="forms-style">
+                        <label for="taxNumber">Tax Identification Number (AFM):</label>
+                        <input type="text" id="taxNumber" name="taxNumber"placeholder="tax number (9-11 digits)" title="Please enter your tax number" autocomplete="on" required><br><br>
+                    </div> 
+                    <div class="forms-style">
+                        <label for="emailAddress">Email@ Address:</label>
+                        <input type="text" id="emailAddress" name="email"placeholder="Enter your email" title="Please enter your email" autocomplete="on" required><br><br>
+                    </div> 
+                    <button id="regFormSubmitBtn">Submit Registration Form</button>                           
+                </form> 
+                <button id="cancelSubmitBtn">Cancel Registration</button> 
+            </section> 
+            <div class="order-container">
+                <div class="order-area-title">
+                    <h2>Οrders</h2>
+                </div>                
+                <section class="order-area">
+                    <div class="invoice">
+                        <div class="invoice-header">
+                            <h2>Invoicing</h2>
+                            <!-- Add any other header information here -->
+                        </div>
+                        <form id ="invoice-form">
+                            <div class="form-row forms-style">
+                                <label for="sku" style="padding-right: 50px;">SKU:</label>
+                                <input type="text" id="sku" name="sku"placeholder="example (e.g. ADE58F45)" title="Please enter SKU" autocomplete="on" required>
+                            </div>
+                            <div class="form-row forms-style">
+                                <label for="description" style="padding-right: 30px;">Description:</label>
+                                <input type="text" id="description" name="description"placeholder="Short description" title="Please enter short description" autocomplete="on" required>
+                            </div>
+                            <div class="form-row forms-style">
+                                <label for="quantity" style="padding-right: 45px;">Quantity / Piece:</label>
+                                <input type="text" id="quantity" name="quantity"placeholder="example (e.g. 1234)" title="Please enter quantity per piece" autocomplete="on" required>
+                            </div>
+                            <div class="form-row forms-style">
+                                <label for="price" style="padding-right: 50px;">Price (€) :</label>
+                                <input type="text" id="price" name="price"placeholder="example (e.g. 123456.78)" title="Please price per piecel" autocomplete="on" required>
+                            </div>
+                            <button  id="next-order">Next order</button>
+                            <button  id="total-inv">Total invoicing</button>
+                        </form>                       
+                        <button  id="cancel-btn">Cancel order</button>                            
+                        
+                        <div class="invoice-total">
+                            <div>Previous Balance: --</div>
+                            <div class="orderAmount">Οrder Αmount:</div>
+                            <div class="vat">VAT:</div>
+                            <div class="total">Total:</div>                            
+                        </div>
+                        <div class="invoice-print">                            
+                            <div class="info-order-entry">
+                                <span class="red-asterisk">*</span>
+                                <h5>no changes are allowed after the order has been placed</h5>
+                            </div> 
+                            <button id="invoiceFormSubmitBtn">Order entry</button>
+                            <button id="storage-btn">Storage In Base</button>                                                                                  
+                        </div>                    
+                </section>
+            </div>            
+        </main>
+        <footer><h4>copywr</h4></footer>
+    </div>
+        <script src="./eventBus.js" type="module" defer></script>
+        <script src="./index.js" type="module" defer></script>
+        <script src="./submitBtnForm.js" type="module" defer></script>
+        <script src="./orderForm.js" type="module" defer></script>
+        <script src="./cancelregist.js" type="module" defer></script>
+        <script src="./strorage.js" type="module" defer></script>
+</body>
+</body>
+</html>

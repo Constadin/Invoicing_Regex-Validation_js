@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/* resets*/
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*all containers*/
+#application {
+  background-color: rgba(227, 233, 234, 0.759);
+}
+
+.main-view {
+  display: flex;
+}
+
+.red-asterisk {
+  color: red;
+}
+
+.content-name-comany {
+  padding-left: 3%;
+  font-size: 1.1rem;
+}
+.content-name-comany h2 {
+  font-size: 2rem;
+  padding-top: 2%;
+}
+.content-name-comany ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Registration form */
+.registration-form {
+  padding-left: 3%;
+  padding-right: 10%;
+  font-size: 1.4rem;
+  border: 2px solid rgba(36, 33, 144, 0.336);
+  background-color: rgba(36, 183, 209, 0.759);
+  min-width: 230px;
+  box-shadow: 10px 0px 9px black;
+}
+.registration-form h5, .registration-form h6 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.registration-form:hover {
+  background-color: rgba(141, 126, 176, 0.398);
+}
+
+.order-container {
+  background-color: rgba(141, 126, 176, 0.398);
+}
+
+/*transform fonts area*/
+.forms-style {
+  max-width: 400px;
+  margin-right: 10%;
+}
+.forms-style input[type=text] {
+  font-size: 1.5rem;
+  width: 110%;
+}
+
+.forms-style input[type=text]::placeholder {
+  color: rgba(91, 90, 90, 0.3098039216); /* Change placeholder text color to red */
+  border-radius: 50px;
+}
+
+.forms-style input[type=text] {
+  border: 8px solid rgba(19, 38, 160, 0.13); /* Σύνορα 1 pixel πάχος, solid είδος, γκρι χρώμα */
+  border-radius: 15px;
+}
+
+.order-area {
+  box-shadow: 9px 2px 9px black;
+}
+
+.order-container {
+  padding: 3%;
+  font-size: 1.6rem;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: 2px solid rgba(36, 33, 144, 0.336);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/*invoice form*/
+.invoice {
+  background-color: rgb(220, 228, 228);
+  padding: 35px;
+  display: block;
+}
+
+.invoice-total {
+  padding: 20px 0;
+  line-height: 40px;
+}
+
+/*btn for form*/
+#regFormSubmitBtn, #invoiceFormSubmitBtn, #printing-creation-btn {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgb(249, 187, 88);
+}
+
+#regFormSubmitBtn:hover {
+  background-color: rgb(22, 229, 74);
+}
+
+#regFormSubmitBtn:active {
+  background-color: rgb(61, 236, 227);
+}
+
+#invoiceFormSubmitBtn:hover {
+  background-color: rgb(22, 229, 74);
+}
+
+#invoiceFormSubmitBtn:active {
+  background-color: rgb(61, 236, 227);
+}
+
+#printing-creation-btn:hover {
+  background-color: rgb(22, 229, 74);
+}
+
+#printing-creation-btn:active {
+  background-color: rgb(61, 236, 227);
+}
+
+#cancelSubmitBtn, #cancel-btn, #storage-btn {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgb(255, 0, 0);
+  color: azure;
+}
+
+#cancelSubmitBtn:hover {
+  background-color: rgb(22, 229, 74);
+}
+
+#cancelSubmitBtn:active {
+  background-color: rgb(108, 108, 108);
+}
+
+#cancel-btn:hover {
+  background-color: rgb(22, 229, 74);
+}
+
+#cancel-btn:active {
+  background-color: rgb(108, 108, 108);
+}
+
+#storage-btn:hover {
+  background-color: rgb(22, 229, 74);
+}
+
+#storage-btn:active {
+  background-color: rgb(108, 108, 108);
+}
+
+.invoice-print h5 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#next-order, #total-inv {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  background-color: rgb(249, 187, 88);
+}
+
+#next-order:hover {
+  background-color: rgb(22, 229, 74);
+}
+
+#next-order:active {
+  background-color: rgb(61, 236, 227);
+}
+
+#total-inv:hover {
+  background-color: rgb(22, 229, 74);
+}
+
+#total-inv:active {
+  background-color: rgb(61, 236, 227);
+}
+
+#storage-btn {
+  display: none;
+}
+
+.footer {
+  height: 200px;
+}/*# sourceMappingURL=main.css.map */
